@@ -35,3 +35,70 @@
 #logo:hover:after {
     width: 50%;
 }
+.slide-in {
+    animation: slideIn 1.5s ease-out;
+  }
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+  }
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+  }
+.rotate {
+    animation: rotate 1.5s ease-out;
+  }
+.scale-in {
+    animation: scaleIn 1.5s ease-out;
+  }
+
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+} 
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  /* Rotate animation */
+  @keyframes rotate {
+    from {
+      transform: rotate(-360deg);
+    }
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  /* Add more animation classes as needed */
+  
