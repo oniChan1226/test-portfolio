@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.toggle-menu {
+    top: 100%;
+}
+#logo::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: width .6s ease;
+}
+#logo:hover:before {
+    width: 50%;
+}
+#logo::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width .6s ease;
+}
+#logo:hover:after {
+    width: 50%;
+}
